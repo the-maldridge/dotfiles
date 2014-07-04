@@ -1,8 +1,42 @@
 servers = (
-  { address = "irc.efnet.org"; chatnet = "EFNet"; port = "6667"; },
-  { address = "irc.oftc.net"; chatnet = "OFTC"; port = "6667"; },
-  { address = "irc.collegiumv.org"; chatnet="collegiumv"; port="6667"; },
-  { address = "irc.michaelwashere.tk"; chatnet"p0rtalNet"; port="6667"; },
+  { address = "irc.esper.net"; chatnet = "Esper"; port = "6667"; autoconnect = "yes"; },
+  {
+    address = "irc.oftc.net";
+    chatnet = "OFTC";
+    port = "6667";
+    autoconnect = "yes";
+  },
+  {
+    address = "irc.collegiumv.org";
+    chatnet = "CollegiumV";
+    use_ssl = "yes";
+    port = "6697";
+    autoconnect = "yes";
+  },
+  {
+    address = "irc.michaelwashere.tk";
+    chatnet = "p0rtalNet";
+    port = "6667";
+    autoconnect = "yes";
+  },
+  { address = "irc.spi.gt"; chatnet = "md_5"; port = "6667"; autoconnect = "yes"}
+);
+
+chatnets = {
+  Esper = { type = "IRC"; };
+  OFTC = { type = "IRC"; };
+  CollegiumV = { type = "IRC"; };
+  p0rtalNet = { type = "IRC"; };
+  md_5 = { type = "IRC"; };
+};
+
+channels = (
+  { name = "#main"; chatnet = "CollegiumV"; autojoin = "Yes"; },
+  { name = "#secure"; chatnet = "CollegiumV"; autojoin = "Yes"; },
+  { name = "#main"; chatnet = "p0rtalNet"; autojoin = "Yes"; },
+  { name = "#utdlug"; chatnet = "OFTC"; autojoin = "Yes"; },
+  { name = "#bukkit"; chatnet = "Esper"; autojoin = "Yes"; },
+  { name = "#bukkitdev"; chatnet = "Esper"; autojoin = "Yes"; }
 );
 
 aliases = {
@@ -174,3 +208,67 @@ settings = {
   };
   "fe-text" = { actlist_sort = "refnum"; };
 };
+windows = {
+  1 = { immortal = "yes"; name = "(status)"; level = "ALL"; };
+  2 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#main";
+        tag = "CollegiumV";
+      }
+    );
+  };
+  3 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#secure";
+        tag = "CollegiumV";
+      }
+    );
+  };
+  4 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#main";
+        tag = "p0rtalNet";
+      }
+    );
+  };
+  5 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#utdlug";
+        tag = "OFTC";
+      }
+    );
+  };
+  6 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#bukkit";
+        tag = "Esper";
+      }
+    );
+  };
+  7 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#bukkitdev";
+        tag = "Esper";
+      }
+    );
+  };
+};
+mainwindows = { 1 = { first_line = "1"; lines = "35"; }; };
