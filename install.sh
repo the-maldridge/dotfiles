@@ -24,6 +24,6 @@ case "$1" in
 	;;
 
     *)
-	echo "Usage: ./install.sh <dfinstall | dfupdate>
-	
+	echo "Usage: $0 <dfinstall | dfupdate>"
+	;;
 esac
