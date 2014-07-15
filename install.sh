@@ -1,7 +1,7 @@
 #!/bin/bash
 
 case "$1" in
-    df)
+    dfinstall)
 	echo "Moving dotfiles to .dotfiles"
 	cd ~
 	mv dotfiles .dotfiles
@@ -24,6 +24,12 @@ case "$1" in
 	source ../.bashrc
 	;;
 
+    packages)
+	echo "Installing base packages"
+	sudo apt-get install tmux htop byobu curl wget emacs vim
+
+	echo "Installing frivilous packages"
+	sudo apt-get install cowsay fortune
     *)
 	echo "Usage: $0 <dfinstall | dfupdate>"
 	;;
