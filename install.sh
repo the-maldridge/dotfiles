@@ -30,6 +30,8 @@ case "$1" in
 
 	echo "Installing frivilous packages"
 	sudo apt-get install cowsay fortune
+	;;
+
     *)
 	echo "Usage: $0 <dfinstall | dfupdate>"
 	;;
