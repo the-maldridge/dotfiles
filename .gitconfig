@@ -1,0 +1,26 @@
+[user]
+email = aldridge.mac@gmail.com
+name = Michael Aldridge
+[core]
+editor = emacs
+[merge]
+tool = vimdiff
+[github]
+user = the-maldridge
+[push]
+default = current
+[color]
+ui = true
+[alias]
+br = branch
+co = checkout
+fe = fetch --all -p
+fixup = commit --amend -C HEAD
+lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+lga = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
+ll = !git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all --since=\"$(git show -s --pretty=format:'%cd' master~3)\"
+pop = stash pop
+rev = diff --staged -M
+review = diff --staged
+save = commit -m'savepoint'
+st = status -sb
