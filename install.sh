@@ -1,7 +1,7 @@
 #!/bin/bash
 
 case "$1" in
-    install)
+    df)
 	echo "Moving dotfiles to .dotfiles"
 	cd ~
 	mv dotfiles .dotfiles
@@ -17,9 +17,13 @@ case "$1" in
 	source ../.bashrc
 	;;
 	
-    update)
+    dfupdate)
 	echo "Updating dotfiles"
 	git pull
 	./dfm/dfm install
+	;;
+
+    *)
+	echo "Usage: ./install.sh <dfinstall | dfupdate>
 	
 esac
