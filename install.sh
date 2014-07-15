@@ -21,6 +21,7 @@ case "$1" in
 	echo "Updating dotfiles"
 	git pull
 	./dfm/dfm install
+	source ../.bashrc
 	;;
 
     *)
