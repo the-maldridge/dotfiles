@@ -6,22 +6,22 @@ case "$1" in
 	cd ~
 	mv dotfiles .dotfiles
 	cd .dotfiles
-	
+
 	echo "Fetching DFM"
-	git submodule init --update
-	
+	git submodule update --init
+
 	echo "Installing dotfiles"
 	./dfm/dfm install
-	
+
 	echo "Forcing bash to reload using current bashrc"
-	source ../.bashrc
+	exec bash
 	;;
-	
+
     dfupdate)
 	echo "Updating dotfiles"
 	git pull
 	./dfm/dfm install
-	source ../.bashrc
+	exec bash
 	;;
 
     packages)
@@ -33,6 +33,6 @@ case "$1" in
 	;;
 
     *)
-	echo "Usage: $0 <dfinstall | dfupdate>"
+	echo "Usage: $0 <dfinstall | dfupdate | packages>"
 	;;
 esac
