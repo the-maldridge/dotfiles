@@ -14,7 +14,7 @@ servers = (
     autoconnect = "yes";
   },
   {
-    address = "irc.michaelwashere.tk";
+    address = "localhost";
     chatnet = "p0rtalNet";
     port = "6667";
     autoconnect = "yes";
