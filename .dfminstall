@@ -1,4 +1,5 @@
 .ssh recurse
 .gitmodules skip
+.config recurse
 dfm skip
 install.sh skip
