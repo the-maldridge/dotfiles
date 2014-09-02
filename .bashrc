@@ -111,3 +111,5 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+alias such="sudo -p \"Doge needs all of your auths: \""
