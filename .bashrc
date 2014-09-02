@@ -113,3 +113,6 @@ if ! shopt -oq posix; then
 fi
 
 alias such="sudo -p \"Doge needs all of your auths: \""
+
+alias shortPrompt="PS1=\">\""
+alias longPrompt="source ~/.bashrc"
