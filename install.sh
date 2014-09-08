@@ -26,7 +26,7 @@ case "$1" in
 
     packages)
 	echo "Installing base packages"
-	sudo apt-get install -y tmux htop byobu curl wget emacs vim
+	sudo apt-get install -y tmux htop byobu curl wget emacs vim arandr
 
 	echo "Installing frivilous packages"
 	sudo apt-get install -y cowsay fortune
