@@ -24,15 +24,22 @@ case "$1" in
 	exec bash
 	;;
 
-    packages)
+    base)
 	echo "Installing base packages"
-	sudo apt-get install -y tmux htop byobu curl wget emacs vim arandr
-
-	echo "Installing frivilous packages"
-	sudo apt-get install -y cowsay fortune
+	sudo apt-get install -y tmux htop byobu curl wget emacs vim
 	;;
 
+    gui)
+	echo "Installing gui packages"
+	sudo apt-get install -y arandr
+	;;
+
+    fun)
+	echo "Installing fun packages"
+	sudo apt-get install -y cowsay fortune
+	;;
+  
     *)
-	echo "Usage: $0 <dfinstall | dfupdate | packages>"
+	echo "Usage: $0 <dfinstall | dfupdate | base | gui | fun>"
 	;;
 esac
