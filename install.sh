@@ -14,7 +14,7 @@ case "$1" in
 	./dfm/dfm install
 
 	echo "Forcing bash to reload using current bashrc"
-	exec bash
+	source ~/.bashrc
 	;;
 
     dfupdate)
