@@ -14,25 +14,32 @@ case "$1" in
 	./dfm/dfm install
 
 	echo "Forcing bash to reload using current bashrc"
-	exec bash
+	source ~/.bashrc
 	;;
 
     dfupdate)
 	echo "Updating dotfiles"
 	git pull
 	./dfm/dfm install
-	exec bash
+	source ~/.bashrc
 	;;
 
-    packages)
+    base)
 	echo "Installing base packages"
 	sudo apt-get install -y tmux htop byobu curl wget emacs vim
-
-	echo "Installing frivilous packages"
-	sudo apt-get install -y cowsay fortune
 	;;
 
+    gui)
+	echo "Installing gui packages"
+	sudo apt-get install -y arandr
+	;;
+
+    fun)
+	echo "Installing fun packages"
+	sudo apt-get install -y cowsay fortune
+	;;
+  
     *)
-	echo "Usage: $0 <dfinstall | dfupdate | packages>"
+	echo "Usage: $0 <dfinstall | dfupdate | base | gui | fun>"
 	;;
 esac

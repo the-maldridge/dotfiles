@@ -3,6 +3,7 @@ email = aldridge.mac@gmail.com
 name = Michael Aldridge
 [core]
 editor = emacs
+	autocrlf = input
 [merge]
 tool = vimdiff
 [github]

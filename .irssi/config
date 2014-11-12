@@ -1,5 +1,10 @@
 servers = (
-  { address = "irc.esper.net"; chatnet = "Esper"; port = "6667"; autoconnect = "yes"; },
+  {
+    address = "irc.esper.net";
+    chatnet = "Esper";
+    port = "6667";
+    autoconnect = "yes";
+  },
   {
     address = "irc.oftc.net";
     chatnet = "OFTC";
@@ -19,7 +24,19 @@ servers = (
     port = "6667";
     autoconnect = "yes";
   },
-  { address = "irc.spi.gt"; chatnet = "md_5"; port = "6667"; autoconnect = "yes"}
+  {
+    address = "irc.spi.gt";
+    chatnet = "md_5";
+    port = "6667";
+    autoconnect = "yes";
+  },
+  {
+    address = "ircecs.utdallas.edu";
+    chatnet = "utdallas";
+    use_ssl = "yes";
+    port = "6697";
+    autoconnect = "yes";
+  }
 );
 
 chatnets = {
@@ -28,6 +45,7 @@ chatnets = {
   CollegiumV = { type = "IRC"; };
   p0rtalNet = { type = "IRC"; };
   md_5 = { type = "IRC"; };
+  utdallas = { type = "IRC"; };
 };
 
 channels = (
@@ -35,8 +53,8 @@ channels = (
   { name = "#secure"; chatnet = "CollegiumV"; autojoin = "Yes"; },
   { name = "#main"; chatnet = "p0rtalNet"; autojoin = "Yes"; },
   { name = "#utdlug"; chatnet = "OFTC"; autojoin = "Yes"; },
-  { name = "#bukkit"; chatnet = "Esper"; autojoin = "Yes"; },
-  { name = "#bukkitdev"; chatnet = "Esper"; autojoin = "Yes"; }
+  { name = "#glowstone"; chatnet = "Esper"; autojoin = "Yes"; },
+  { name = "#main"; chatnet = "utdallas"; autojoin = "Yes"; }
 );
 
 aliases = {
@@ -255,7 +273,7 @@ windows = {
       {
         type = "CHANNEL";
         chat_type = "IRC";
-        name = "#bukkit";
+        name = "#glowstone";
         tag = "Esper";
       }
     );
@@ -265,10 +283,20 @@ windows = {
       {
         type = "CHANNEL";
         chat_type = "IRC";
-        name = "#bukkitdev";
-        tag = "Esper";
+        name = "#md_5";
+        tag = "md_5";
+      }
+    );
+  };
+  8 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#main";
+        tag = "utdallas";
       }
     );
   };
 };
-mainwindows = { 1 = { first_line = "1"; lines = "35"; }; };
+mainwindows = { 1 = { first_line = "1"; lines = "34"; }; };
