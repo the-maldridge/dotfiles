@@ -31,7 +31,7 @@ case "$1" in
 
     gui)
 	echo "Installing gui packages"
-	sudo apt-get install -y arandr
+	sudo apt-get install -y arandr rxvt-unicode-256color ncurses-term fonts-inconsolata
 	;;
 
     fun)
