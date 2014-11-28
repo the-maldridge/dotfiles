@@ -3,3 +3,4 @@
 .config recurse
 dfm skip
 install.sh skip
+urxvt skip
