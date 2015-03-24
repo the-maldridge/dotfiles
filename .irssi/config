@@ -19,7 +19,7 @@ servers = (
     autoconnect = "yes";
   },
   {
-    address = "localhost";
+    address = "michaelwashere.net";
     chatnet = "p0rtalNet";
     port = "6667";
     autoconnect = "yes";
@@ -33,7 +33,14 @@ servers = (
   {
     address = "ircecs.utdallas.edu";
     chatnet = "utdallas";
-    use_ssl = "yes";
+    use_ssl = "no";
+    port = "6667";
+    autoconnect = "yes";
+  },
+  {
+    address = "localhost";
+    chatnet = "bitlbee";
+    use_ssl = "no";
     port = "6697";
     autoconnect = "yes";
   }
@@ -46,6 +53,7 @@ chatnets = {
   p0rtalNet = { type = "IRC"; };
   md_5 = { type = "IRC"; };
   utdallas = { type = "IRC"; };
+  bitlbee = { type = "IRC"; };
 };
 
 channels = (
@@ -54,7 +62,9 @@ channels = (
   { name = "#main"; chatnet = "p0rtalNet"; autojoin = "Yes"; },
   { name = "#utdlug"; chatnet = "OFTC"; autojoin = "Yes"; },
   { name = "#glowstone"; chatnet = "Esper"; autojoin = "Yes"; },
-  { name = "#main"; chatnet = "utdallas"; autojoin = "Yes"; }
+  { name = "#glowstonedev"; chatnet = "Esper"; autojoin = "Yes"; },
+  { name = "#main"; chatnet = "utdallas"; autojoin = "Yes"; },
+  { name = "#bitlbee"; chatnet = "bitlbee"; autojoin = "Yes"; }
 );
 
 aliases = {
@@ -226,6 +236,7 @@ settings = {
   };
   "fe-text" = { actlist_sort = "refnum"; };
 };
+
 windows = {
   1 = { immortal = "yes"; name = "(status)"; level = "ALL"; };
   2 = {
@@ -283,12 +294,22 @@ windows = {
       {
         type = "CHANNEL";
         chat_type = "IRC";
+        name = "#glowstonedev";
+        tag = "glowstonedev";
+      }
+    );
+  };
+  8 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
         name = "#md_5";
         tag = "md_5";
       }
     );
   };
-  8 = {
+  9 = {
     items = (
       {
         type = "CHANNEL";
@@ -298,5 +319,16 @@ windows = {
       }
     );
   };
+  10 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#bitlbee";
+        tag = "bitlbee";
+      }
+    );
+  };
 };
+
 mainwindows = { 1 = { first_line = "1"; lines = "34"; }; };
