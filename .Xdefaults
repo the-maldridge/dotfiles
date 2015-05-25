@@ -1,7 +1,7 @@
 URxvt.termName:         rxvt-256color
-URxvt.font:             xft:inconsolata:pixelsize=15
+URxvt.font:             xft:inconsolata:pixelsize=17
 URxvt.perl-ext-common:  default,matcher,clipboard,tabbed
-URxvt.urlLauncher:      iceweasel
+URxvt.urlLauncher:      firefox
 URxvt.matcher.button:   1
 URxvt.scrollstyle:	plain
 URxvt.scrollBar_right:	true
@@ -9,7 +9,7 @@ URxvt.saveLines:        4095
 URxvt.iso14755:         False
 URxvt.keysym.Shift-Control-C:       perl:clipboard:copy
 URxvt.keysym.Shift-Control-V:       perl:clipboard:paste
-Urxvt.tabbed.autohide: true
+URxvt.tabbed.autohide: true
 
 ! special
 *.foreground:   #ffffff
