@@ -125,14 +125,6 @@ if which tmux >/dev/null 2>&1; then
     fi
 fi
 
-alias such="sudo -p \"Doge needs all of your auths: \""
-
-alias shortPrompt="PS1=\">\""
-alias longPrompt="source ~/.bashrc"
-
-alias powerrem="echo -n $(($(cat /sys/class/power_supply/BAT0/charge_now)*100  / $(cat /sys/class/power_supply/BAT0/charge_full))); echo '%'"
-alias oldTerm="/usr/libexec/xscreensaver/phosphor -scale 2 -delay 10000 -program /bin/bash"
-
 export PAGER=less
 export PATH=$PATH:/usr/local/apache-maven-3.3.3/bin
 export JAVA_HOME=/usr/lib/jvm/openjdk-1.8.0_60
