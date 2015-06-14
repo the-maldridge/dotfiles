@@ -1,3 +1,6 @@
 [submodule "dfm"]
 	path = dfm
 	url = https://github.com/justone/dfm.git
+[submodule ".config/awesome/apw"]
+	path = .config/awesome/apw
+	url = https://github.com/mokasin/apw.git
