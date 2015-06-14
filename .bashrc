@@ -112,19 +112,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Load into tmux if interactive and available
-if which tmux >/dev/null 2>&1; then
-    [[ $- != *i* ]] && return
-    #if not inside a tmux session, and if no session is started, start a new session
-    if [ -z "$TMUX" ]; then
-	if tmux ls >/dev/null 2>&1; then
-	    exec tmux new -t 'default';
-	else
-	    exec tmux new -s 'default';
-	fi
-    fi
-fi
-
 export PAGER=less
 export PATH=$PATH:/usr/local/apache-maven-3.3.3/bin
 export JAVA_HOME=/usr/lib/jvm/openjdk-1.8.0_60
