@@ -1,2 +1,2 @@
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+xrdb ~/.Xresources
 awesome
