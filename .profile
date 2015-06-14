@@ -20,3 +20,6 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+eval $(ssh-agent)
+ssh-add
