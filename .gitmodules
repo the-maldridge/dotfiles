@@ -4,3 +4,6 @@
 [submodule ".config/awesome/apw"]
 	path = .config/awesome/apw
 	url = https://github.com/mokasin/apw.git
+[submodule ".config/awesome/bat"]
+	path = .config/awesome/bat
+	url = git@github.com:the-maldridge/aweseomewm-batmonitor.git

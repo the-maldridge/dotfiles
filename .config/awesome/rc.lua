@@ -17,6 +17,9 @@ local menubar = require("menubar")
 -- Volume Widget
 local APW = require("apw/widget")
 
+-- Battery Widget
+local batWidget = require("bat/widget")
+
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -197,6 +200,7 @@ for s = 1, screen.count() do
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
     if s == 1 then right_layout:add(wibox.widget.systray()) end
+    right_layout:add(batWidget)
     right_layout:add(APW)
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
