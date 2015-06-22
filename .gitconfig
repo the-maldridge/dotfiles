@@ -25,3 +25,5 @@ rev = diff --staged -M
 review = diff --staged
 save = commit -m'savepoint'
 st = status -sb
+[rerere]
+	enabled = true
