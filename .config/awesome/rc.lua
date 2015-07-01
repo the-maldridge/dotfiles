@@ -478,3 +478,6 @@ end
 
 -- Start the nm-applet
 run_once("nm-applet")
+
+-- Start pulseaudio
+run_once("pulseaudio")
