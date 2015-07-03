@@ -14,7 +14,7 @@ case "$1" in
 	./dfm/dfm install
 
 	echo "Forcing bash to reload using current bashrc"
-	source ~/.bashrc
+	exec bash
 	;;
 
     dfupdate)
@@ -24,22 +24,6 @@ case "$1" in
 	source ~/.bashrc
 	;;
 
-    base)
-	echo "Installing base packages"
-	sudo apt-get install -y tmux htop byobu curl wget emacs vim
-	;;
-
-    gui)
-	echo "Installing gui packages"
-	sudo apt-get install -y arandr rxvt-unicode-256color xclip ncurses-term fonts-inconsolata
-	sudo cp urxvt/clipboard /usr/lib/urxvt/perl/clipboard
-	;;
-
-    fun)
-	echo "Installing fun packages"
-	sudo apt-get install -y cowsay fortune
-	;;
-  
     *)
 	echo "Usage: $0 <dfinstall | dfupdate | base | gui | fun>"
 	;;
