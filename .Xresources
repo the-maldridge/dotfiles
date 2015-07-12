@@ -1,9 +1,9 @@
 *Rxvt.termName:         rxvt-256color
 *Rxvt.font:             xft:inconsolata:pixelsize=17
-*Rxvt.perl-ext-common:  default,matcher,clipboard
-*Rxvt.urlLauncher:      /usr/bin/firefox
-*Rxvt.matcher.button:   1
-*Rxvt.matcher.rend.0:	Uline Bold fg5
+*Rxvt.perl-ext-common:  default,clipboard,url-select
+*Rxvt.keysym.M-u: perl:url-select:select_next
+*Rxvt.url-select.launcher: /usr/bin/firefox
+*Rxvt.url-select.underline: true
 *Rxvt.scrollstyle:	plain
 *Rxvt.scrollBar_right:	true
 *Rxvt.saveLines:        4095
