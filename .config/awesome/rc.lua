@@ -18,11 +18,12 @@ local menubar = require("menubar")
 local APW = require("apw/widget")
 
 -- Battery Widget
---if pcall(function() local batWidget = require("bat/widget") end) then
---   local battery=false
---end
-
 local battery=false
+local batWidget = false
+if pcall(function() batWidget = require("bat/widget") end) then
+   battery=true
+end
+
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
