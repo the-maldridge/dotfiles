@@ -484,8 +484,5 @@ function run_once(cmd)
    awful.util.spawn_with_shell("pgrep -u $USER -x " .. findme .. " > /dev/null || (" .. cmd .. ")")
 end
 
--- Start the nm-applet
-run_once("nm-applet")
-
 -- Start pulseaudio
 run_once("pulseaudio")
