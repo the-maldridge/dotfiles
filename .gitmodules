@@ -1,12 +1,6 @@
 [submodule "dfm"]
 	path = dfm
 	url = https://github.com/justone/dfm.git
-[submodule ".config/awesome/apw"]
-	path = .config/awesome/apw
-	url = https://github.com/mokasin/apw.git
-[submodule ".config/awesome/bat"]
-	path = .config/awesome/bat
-	url = https://github.com/the-maldridge/awesomewm-batmonitor.git 
 [submodule ".config/awesome/vicious"]
 	path = .config/awesome/vicious
 	url = http://git.sysphere.org/vicious
