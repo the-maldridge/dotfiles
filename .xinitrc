@@ -1,2 +1,6 @@
-xrdb ~/.Xresources
+if [ -f .Xresources ]
+then
+    xrdb ~/.Xresources
+fi
+
 awesome
