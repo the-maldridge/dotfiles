@@ -1,6 +1,7 @@
 .ssh recurse
 .gitmodules skip
 .config recurse
+.weechat recurse
 dfm skip
 install.sh skip
 urxvt skip
