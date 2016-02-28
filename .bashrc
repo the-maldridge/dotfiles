@@ -85,3 +85,5 @@ export JAVA_HOME=/usr/lib/jvm/openjdk
 
 #load cv files
 source ~/Documents/CV/cv_config/scripts/shell_setup
+
+export export GPG_TTY=$(tty)
