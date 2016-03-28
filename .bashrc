@@ -84,6 +84,8 @@ export PATH=$PATH:/usr/local/apache-maven-3.3.3/bin
 export JAVA_HOME=/usr/lib/jvm/openjdk
 
 #load cv files
-source ~/Documents/CV/cv_config/scripts/shell_setup
+if [ -f ~/Documents/CV/cv_config/scripts/shell_setup ] ; then
+    source ~/Documents/CV/cv_config/scripts/shell_setup
+fi
 
 export export GPG_TTY=$(tty)
