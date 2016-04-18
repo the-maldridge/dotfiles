@@ -1,3 +1,0 @@
-Wierd that there's a flag in my dotfiles, isn't it?
-
-{flag:zxcvbnm}
