@@ -1,6 +1,9 @@
-if [ -f .Xresources ]
-then
+if [ -f .Xresources ] ; then
     xrdb ~/.Xresources
+fi
+
+if [ -f .screenlayout/default.sh ] ; then
+     .screenlayout/default.sh
 fi
 
 awesome
