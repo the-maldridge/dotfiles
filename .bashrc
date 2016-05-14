@@ -82,7 +82,6 @@ if [ ! -f $HOME/.nokeys ] ; then
 fi
 
 export PAGER=less
-export PATH=$PATH:/usr/local/apache-maven-3.3.3/bin
 export JAVA_HOME=/usr/lib/jvm/openjdk
 
 #load cv files
