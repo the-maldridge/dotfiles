@@ -89,4 +89,4 @@ if [ -f ~/Documents/CV/cv_config/scripts/shell_setup ] ; then
     source ~/Documents/CV/cv_config/scripts/shell_setup
 fi
 
-export export GPG_TTY=$(tty)
+export GPG_TTY=$(tty)
