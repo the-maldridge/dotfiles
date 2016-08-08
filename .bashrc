@@ -90,3 +90,4 @@ if [ -f ~/Documents/CV/cv_config/scripts/shell_setup ] ; then
 fi
 
 export GPG_TTY=$(tty)
+export EDITOR=emacs
