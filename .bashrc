@@ -91,3 +91,6 @@ fi
 
 export GPG_TTY=$(tty)
 export EDITOR=emacs
+
+# Add ~/bin to path
+export PATH=$PATH:~/bin
