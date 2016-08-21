@@ -72,7 +72,7 @@ batwidget:set_color("#4e9a06")
 -- Initialize widget
 vicious.register(batwidget, vicious.widgets.bat, "$2", 120, "BAT0")
 
---inline alsa widget
+-- Inline alsa widget
 local alsawidget =
    {
       channel = "Master",
@@ -101,7 +101,7 @@ local alsawidget =
    }
 
 
--- widget
+-- Alsa Widget
 alsawidget.bar = awful.widget.progressbar ()
 alsawidget.bar:set_width (8)
 alsawidget.bar:set_vertical (true)
@@ -130,6 +130,7 @@ alsawidget.bar:buttons (awful.util.table.join (
 
 -- tooltip
 alsawidget.tooltip = awful.tooltip ({ objects = { alsawidget.bar } })
+
 -- naughty notifications
 alsawidget._current_level = 0
 alsawidget._muted = false
