@@ -94,3 +94,6 @@ export EDITOR=emacs
 
 # Add ~/bin to path
 export PATH=$PATH:~/bin
+
+# Add dfm to path
+export PATH=$PATH:~/.dotfiles/dfm
