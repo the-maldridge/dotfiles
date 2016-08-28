@@ -10,6 +10,8 @@
 *Rxvt.iso14755:         False
 *Rxvt.keysym.Shift-Control-C:       perl:clipboard:copy
 *Rxvt.keysym.Shift-Control-V:       perl:clipboard:paste
+*Rxvt.transparent:   true
+*Rxvt.shading:       20
 
 ! special
 *.foreground:   #ffffff
