@@ -13,12 +13,12 @@ bindsym XF86AudioRaiseVolume exec amixer -q set Master 4%+ unmute
 bindsym XF86AudioLowerVolume exec amixer -q set Master 4%- unmute
 bindsym XF86AudioMute exec amixer -q sset Master toggle
 
-# use these keys for focus, movement, and resize directions when reaching for
-# the arrows is not convenient
-set $up l
-set $down k
+# Locking and Blanking
+bindsym $mod+l exec xlock
+bindsym $mod+b exec xset dpms force off
+
+# Jump through window list
 set $left j
-set $right semicolon
 
 # use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
