@@ -97,3 +97,7 @@ export PATH=$PATH:~/bin
 
 # Add dfm to path
 export PATH=$PATH:~/.dotfiles/dfm
+
+if [ -d ~/.local/bin ] ; then
+    export PATH=$PATH:~/.local/bin
+fi
