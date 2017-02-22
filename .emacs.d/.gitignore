@@ -1,0 +1,9 @@
+elpa/
+melpa/
+gnu/
+backups/
+history/
+undo/
+url/
+eshell/
+auto-save-list/
