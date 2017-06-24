@@ -107,3 +107,10 @@ PERL5LIB="/home/maldridge/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL
 PERL_LOCAL_LIB_ROOT="/home/maldridge/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/maldridge/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/maldridge/perl5"; export PERL_MM_OPT;
+
+# Check for node crap
+if [ -d .node ] ; then
+    export PATH=$PATH:~/.node/bin
+    export NODE_PATH="~/.node/lib/node_modules:$NODE_PATH"
+    export MANPATH="~/.node/share/man:$MANPATH"
+fi
