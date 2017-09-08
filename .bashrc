@@ -109,6 +109,6 @@ fi
 # Check for node crap
 if [ -d .node ] ; then
     export PATH=$PATH:~/.node/bin
-    export NODE_PATH="~/.node/lib/node_modules:$NODE_PATH"
-    export MANPATH="~/.node/share/man:$MANPATH"
+    export NODE_PATH="$HOME/.node/lib/node_modules:$NODE_PATH"
+    export MANPATH="$HOME/.node/share/man:$MANPATH"
 fi
