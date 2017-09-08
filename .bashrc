@@ -102,6 +102,10 @@ if [ -d ~/.local/bin ] ; then
     export PATH=$PATH:~/.local/bin
 fi
 
+if [ -d ~/go/bin ] ; then
+    export PATH=$PATH:~/go/bin
+fi
+
 PATH="/home/maldridge/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/home/maldridge/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/home/maldridge/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
