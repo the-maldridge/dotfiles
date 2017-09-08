@@ -84,11 +84,6 @@ fi
 export PAGER=less
 export JAVA_HOME=/usr/lib/jvm/openjdk
 
-#load cv files
-if [ -f ~/Documents/CV/cv_config/scripts/shell_setup ] ; then
-    source ~/Documents/CV/cv_config/scripts/shell_setup
-fi
-
 export GPG_TTY=$(tty)
 export EDITOR=emacs
 
