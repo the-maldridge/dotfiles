@@ -151,3 +151,5 @@ bar {
 }
 
 exec sh ~/.fehbg
+exec xscreensaver -nosplash
+exec redshift
