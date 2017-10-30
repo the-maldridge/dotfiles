@@ -4,6 +4,7 @@ name = Michael Aldridge
 [core]
 editor = emacs -nw
 autocrlf = input
+quotepath = false
 [merge]
 tool = vimdiff
 [github]
