@@ -102,8 +102,8 @@ if [ -d ~/go/bin ] ; then
 fi
 
 # Check for node crap
-if [ -d .node ] ; then
-    export PATH=$PATH:~/.node/bin
+if [ -d "$HOME/.node" ] ; then
+    export PATH=$PATH:"$HOME/.node/bin"
     export NODE_PATH="$HOME/.node/lib/node_modules:$NODE_PATH"
     export MANPATH="$HOME/.node/share/man:$MANPATH"
 fi
