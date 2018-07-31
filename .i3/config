@@ -15,7 +15,7 @@ bindsym XF86AudioMute exec amixer -q sset Master toggle
 
 # Locking and Blanking
 bindsym $mod+l exec xscreensaver-command --lock
-bindsym $mod+b exec xset dpms force off
+bindsym $mod+b exec sleep 1 && xset dpms force off
 
 # Jump through window list
 set $left j
