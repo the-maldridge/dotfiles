@@ -11,7 +11,7 @@
 *Rxvt.keysym.Shift-Control-C:       perl:clipboard:copy
 *Rxvt.keysym.Shift-Control-V:       perl:clipboard:paste
 *Rxvt.transparent:   true
-*Rxvt.shading:       16
+*Rxvt.shading:       25
 
 ! special
 *.foreground:   #ffffff
