@@ -1,30 +1,32 @@
 [user]
-email = aldridge.mac@gmail.com
-name = Michael Aldridge
+	email = aldridge.mac@gmail.com
+	name = Michael Aldridge
 [core]
-editor = emacs -nw
-autocrlf = input
-quotepath = false
+	editor = emacs -nw
+	autocrlf = input
+	quotepath = false
 [merge]
-tool = vimdiff
+	tool = vimdiff
 [github]
-user = the-maldridge
+	user = the-maldridge
 [push]
-default = current
+	default = current
 [color]
-ui = true
+	ui = true
 [alias]
-br = branch
-co = checkout
-fe = fetch --all -p
-fixup = commit --amend -C HEAD
-lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-lga = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all
-ll = !git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all --since=\"$(git show -s --pretty=format:'%cd' master~3)\"
-pop = stash pop
-rev = diff --staged -M
-review = diff --staged
-save = commit -m'savepoint'
-st = status -sb
+	br = branch
+	co = checkout
+	fe = fetch --all -p
+	fixup = commit --amend -C HEAD
+	lg = log --color --graph --pretty=colorful-oneline --abbrev-commit
+	lga = log --color --graph --pretty=colorful-oneline --abbrev-commit --all
+	ll = !git log --color --graph --pretty=colorful-oneline --abbrev-commit --all --since=\"$(git show -s --pretty=format:'%cd' master~3 2>/dev/null || git log --format="format:%cd" --reverse | head -n 1)\"
+	pop = stash pop
+	rev = diff --staged -M
+	review = diff --staged
+	save = commit -m'savepoint'
+	st = status -sb
+[pretty]
+	colorful-oneline = format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
 [rerere]
 	enabled = true
