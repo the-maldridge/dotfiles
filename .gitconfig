@@ -28,3 +28,5 @@ save = commit -m'savepoint'
 st = status -sb
 [rerere]
 	enabled = true
+[init]
+	defaultBranch = master
