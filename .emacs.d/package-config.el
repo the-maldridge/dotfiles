@@ -5,8 +5,6 @@
 ;; Build list of archives
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
-(when (< emacs-major-version 24)
-  (add-to-list 'package-archives ("gnu" . "https://elpa.gnu.org/packages/")))
 ;; Make sure package archives have been downloaded
 (or (file-exists-p package-user-dir)
     (package-refresh-contents))

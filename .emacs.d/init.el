@@ -1,7 +1,5 @@
 ;; Set certain global settings
 
-(package-initialize)
-
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
 (setq user-full-name "Michael Aldridge")
 (setq user-mail-address "aldridge.mac@gmail.com")
