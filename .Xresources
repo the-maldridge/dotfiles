@@ -1,17 +1,17 @@
-*Rxvt.termName:         rxvt-256color
-*Rxvt.font:             xft:inconsolata:size=12
-*Rxvt.perl-ext-common:  default,clipboard,url-select,resize-font
-*Rxvt.keysym.M-u: perl:url-select:select_next
-*Rxvt.url-select.launcher: /usr/bin/firefox
-*Rxvt.url-select.underline: true
-*Rxvt.scrollstyle:	plain
-*Rxvt.scrollBar_right:	true
-*Rxvt.saveLines:        4095
-*Rxvt.iso14755:         False
-*Rxvt.keysym.Shift-Control-C:       perl:clipboard:copy
-*Rxvt.keysym.Shift-Control-V:       perl:clipboard:paste
-*Rxvt.transparent:   true
-*Rxvt.shading:       25
+URxvt.termName:         rxvt-256color
+URxvt.font:             xft:inconsolata:size=12
+URxvt.perl-ext-common:  default,clipboard,url-select,resize-font
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/firefox
+URxvt.url-select.underline: true
+URxvt.scrollstyle:	plain
+URxvt.scrollBar_right:	true
+URxvt.saveLines:        4095
+URxvt.iso14755:         False
+URxvt.keysym.Shift-Control-C:       perl:clipboard:copy
+URxvt.keysym.Shift-Control-V:       perl:clipboard:paste
+URxvt.transparent:   true
+URxvt.shading:       25
 
 ! special
 *.foreground:   #ffffff
@@ -49,4 +49,3 @@
 ! white
 *.color7:       #d3d7cf
 *.color15:      #eeeeec
-
