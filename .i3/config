@@ -9,9 +9,9 @@ bindsym XF86MonBrightnessDown exec xbacklight -steps 1 -time 0 -dec 5
 bindsym XF86MonBrightnessUp exec xbacklight -steps 1 -time 0 -inc 5
 
 # Volume Control
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 4%+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 4%- unmute
-bindsym XF86AudioMute exec amixer -q sset Master toggle
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
 
 # Locking and Blanking
 bindsym $mod+l exec xscreensaver-command --lock
@@ -151,5 +151,7 @@ bar {
 }
 
 exec sh ~/.fehbg
-exec xscreensaver -nosplash
 exec redshift
+exec pipewire
+exec pipewire-pulse
+exec wireplumber
