@@ -21,8 +21,11 @@ HISTFILESIZE=2000
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
-
-PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1)\$ '
+if [ -n "$(tput colors)" ] ; then
+    PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]$(__git_ps1)\$ '
+else
+    PS1='\u@\h:\w\$ '
+fi
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
