@@ -153,5 +153,3 @@ bar {
 exec sh ~/.fehbg
 exec redshift
 exec pipewire
-exec pipewire-pulse
-exec wireplumber
