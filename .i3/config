@@ -153,3 +153,5 @@ bar {
 exec sh ~/.fehbg
 exec redshift
 exec pipewire
+
+exec_always --no-startup-id picom --backend glx
