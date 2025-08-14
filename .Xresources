@@ -1,5 +1,5 @@
 URxvt.termName:         rxvt-256color
-URxvt.font:             xft:inconsolata:size=12
+URxvt.font:             xft:inconsolata:size=12,xft:Noto Color Emoji:style=regular:size=10
 URxvt.perl-ext-common:  default,clipboard,url-select,resize-font
 URxvt.keysym.M-u: perl:url-select:select_next
 URxvt.url-select.launcher: /usr/bin/firefox
