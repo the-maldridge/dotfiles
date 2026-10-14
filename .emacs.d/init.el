@@ -1,4 +1,4 @@
-;; Set certain global settings
+;; Set certain global settings  -*- lexical-binding: t; -*-
 
 (setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
 (setq user-full-name "Michael Aldridge")
@@ -32,3 +32,19 @@
              (string= (substring path -3) ".el"))
         (load (file-name-sans-extension fullpath)))))))
 (load-directory "~/.emacs.d/pkg-conf")
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   '(d2-mode diminish dockerfile-mode flycheck go-mode hcl-mode
+             jinja2-mode json-mode json-reformat markdown-mode
+             nginx-mode php-mode protobuf-mode python-mode web-mode
+             yaml-mode)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

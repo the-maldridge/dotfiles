@@ -1,4 +1,4 @@
-;; Spaces vs Tabs
+;; Spaces vs Tabs  -*- lexical-binding: t; -*-
 (setq-default indent-tabs-mode nil)
 (setq tab-width 4)
 

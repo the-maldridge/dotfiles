@@ -1,4 +1,4 @@
-;;; Configure package.el
+;;; Configure package.el  -*- lexical-binding: t; -*-
 (eval-when-compile (require 'package))
 ;; Disable automatic package loading
 (setq package-enable-at-startup nil)

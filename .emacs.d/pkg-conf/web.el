@@ -1,4 +1,4 @@
-;; Ensure that web-mode is available
+;; Ensure that web-mode is available  -*- lexical-binding: t; -*-
 
 (use-package web-mode
   :ensure t
